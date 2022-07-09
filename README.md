@@ -27,5 +27,16 @@ pip install -r requirements.txt
 ###### To run the App, use:  
 python manage.py runserver
 
+## Project API's
+###### Sign Up API
+(http://127.0.0.1:8000/auth/registration/)
 
+###### Payload  
+username  
+email  
 
+###### Result
+{
+    "result": "User Register Successfully",
+    "username": "mujeeb"
+}
