@@ -40,4 +40,4 @@ email
     "result": "User Register Successfully",
     "username": "mujeeb"
 }  
-After Successful registration an email will be sent to the user mentioned email with a randomly generated password
+** ** After Successful registration an email will be sent to the user mentioned email with a randomly generated password
