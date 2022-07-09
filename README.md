@@ -113,6 +113,8 @@ GET
 
 ###### API for Getting all Categories
 (http://127.0.0.1:8000/vehicles/category/1/)  
+###### Method  
+DELETE
 **Note: Before deleting a category we should delete the cars in that category because the category field is a foreign key in the Car model and on_delete is Protected**
 ###### Result
 Category with the mentioned id will be deleted from the database
