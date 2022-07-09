@@ -49,13 +49,13 @@ email
 password  
 ###### Result
 {
-    "result": "User login Successfully",
-    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJhemFAeW9wbWFpbC5jb20iLCJ1c2VybmFtZSI6InJhemF1bGxhaCIsImlhdCI6MTY1NzMwNzgwNH0.dGOcISYWPIMskh0nhTigRtrJsawoaPwabFWo0m9Tgik",
-    "users": [
+    "result": "User login Successfully",  
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJhemFAeW9wbWFpbC5jb20iLCJ1c2VybmFtZSI6InJhemF1bGxhaCIsImlhdCI6MTY1NzMwNzgwNH0.dGOcISYWPIMskh0nhTigRtrJsawoaPwabFWo0m9Tgik",  
+    "users":  [  
         {
-            "id": 1,
-            "username": "razaullah",
-            "email": "raza@yopmail.com"
-        }
+            "id": 1,  
+            "username": "razaullah",  
+            "email": "raza@yopmail.com"  
+        }  
     ]
 }
