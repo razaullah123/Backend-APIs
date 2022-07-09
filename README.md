@@ -68,6 +68,7 @@ password  **Sent to the user email**
 }
 
 ###### API for Creating a Category
+(http://127.0.0.1:8000/vehicles/category/)
 ###### Method  
 POST
 ###### Payload
@@ -75,4 +76,15 @@ title
 ###### Result
 {
     "title": "Bus"
+}
+
+###### API for Updating a Category
+(http://127.0.0.1:8000/vehicles/category/1/)
+###### Method  
+PATCH
+###### Payload
+title
+###### Result
+{
+    "title": "Cars"
 }
