@@ -118,3 +118,20 @@ DELETE
 **Note: Before deleting a category we should delete the cars in that category because the category field is a foreign key in the Car model and on_delete is Protected**
 ###### Result
 Category with the mentioned id will be deleted from the database
+
+###### API for Creating a Car
+###### Method  
+POST
+###### Payload
+color  
+model  
+register_num  
+category  
+###### Result
+{  
+    "color": "Blue",  
+    "model": 2005,  
+    "register_num": 1988,  
+    "category": 2,  
+    "register_cars": 3  
+}  
