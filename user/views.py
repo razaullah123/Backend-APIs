@@ -47,7 +47,7 @@ class RegistrationView(APIView):
         if not serializer_registration.is_valid():
             return JsonResponse({'result': serializer_registration.errors})
         user = serializer_registration.save()
-        return JsonResponse({"result": user.username})
+        return JsonResponse({"result": "User Register Successfully", "username": user.username})
 
 
 class SignInView(APIView):

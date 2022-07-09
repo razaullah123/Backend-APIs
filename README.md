@@ -26,3 +26,6 @@ pip install -r requirements.txt
 ## Running the App
 ###### To run the App, use:  
 python manage.py runserver
+
+
+
