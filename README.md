@@ -5,6 +5,8 @@
 ###### Clone the repository using the command below :
 [git clone] (https://github.com/razaullah123/Ropstam.git)
 
+## Project Setup
+
 ###### Move into the directory where we have the project files :
 cd Ropstam
 
