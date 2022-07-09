@@ -34,11 +34,6 @@ class CarViewSet(ModelViewSet):
     pagination_class = PageNumberPagination
 
 
-def send_email(request,id):
-    email = User.objects.filter(id=id)
-    send_mail('user confirmation mail', 'welcome you are succesfuly registerd', 'iamharisgul@gmail.com', ['iamharisgul@gmail.com'])
-    Response("email send")
-
 
 
 

@@ -11,6 +11,4 @@ router.register('car', views.CarViewSet, basename='car')
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('sendemail/<int:id>', views.send_email, name='sendemail'),
-
 ]
