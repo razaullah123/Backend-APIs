@@ -135,3 +135,37 @@ category
     "category": 2,  
     "register_cars": 3  
 }  
+###### API for Getting all registered Cars
+###### Method 
+GET
+###### Payload
+Token 
+###### Result
+{
+    "count": 3,  
+    "next": null,  
+    "previous": null,  
+    "results": [  
+        {  
+            "color": "Black",  
+            "model": 2007,  
+            "register_num": 1988,  
+            "category": 2,  
+            "register_cars": 3  
+        },  
+        {  
+            "color": "Blue",  
+            "model": 2005,  
+            "register_num": 1988,  
+            "category": 2,  
+            "register_cars": 3  
+        },  
+        {  
+            "color": "white",  
+            "model": 2006,  
+            "register_num": 1988,  
+            "category": 2,  
+            "register_cars": 3  
+        }  
+    ]  
+}  
