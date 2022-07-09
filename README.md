@@ -72,8 +72,8 @@ password  **Sent to the user email**
 ###### Method  
 POST
 ###### Payload
-title
-token
+title  
+token  
 ###### Result
 {
     "title": "Bus"
@@ -84,7 +84,7 @@ token
 ###### Method  
 PATCH
 ###### Payload
-title
+title  
 token
 ###### Result
 {
@@ -95,6 +95,8 @@ token
 (http://127.0.0.1:8000/vehicles/category/)
 ###### Method  
 GET
+###### Payload
+token
 ###### Result
 {
     "count": 3,
@@ -181,7 +183,7 @@ Token
 ###### Method 
 GET
 ###### Payload
-Token 
+token 
 ###### Result
 {  
     "color": "Black",  
