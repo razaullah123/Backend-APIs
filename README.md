@@ -31,6 +31,9 @@ python manage.py runserver
 ###### Sign Up API
 (http://127.0.0.1:8000/auth/registration/)
 
+###### Method  
+POST
+
 ###### Payload  
 username  
 email  
@@ -43,6 +46,10 @@ email
 **After Successful registration an email will be sent to the user mentioned email with a randomly generated password**
 ###### Sign In API
 ( http://127.0.0.1:8000/auth/sign-in/)
+
+###### Method  
+POST
+
 ###### Payload
 username  
 email  
@@ -61,6 +68,8 @@ password
 }
 
 ###### API for Creating a Category
+###### Method  
+POST
 ###### Payload
 title
 ###### Result
