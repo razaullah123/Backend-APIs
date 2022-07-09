@@ -53,7 +53,7 @@ POST
 ###### Payload
 username  
 email  
-password  
+password  **Sent to the user email**
 ###### Result
 {
     "result": "User login Successfully",  
