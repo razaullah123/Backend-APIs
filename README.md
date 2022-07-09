@@ -141,6 +141,7 @@ token
     "register_cars": 3  
 }  
 ###### API for Getting all registered Cars
+(http://127.0.0.1:8000/vehicles/car/)
 ###### Method 
 GET
 ###### Payload
@@ -174,6 +175,22 @@ Token
         }  
     ]  
 }  
+
+###### API for Getting a Single Car Record
+(http://127.0.0.1:8000/vehicles/car/2)
+###### Method 
+GET
+###### Payload
+Token 
+###### Result
+{  
+    "color": "Black",  
+    "model": 2007,  
+    "register_num": 1988,  
+    "category": 2,  
+    "register_cars": 2  
+}  
+
 ###### API for Updating a Registered Car
 (http://127.0.0.1:8000/vehicles/car/1/)
 ###### Method
