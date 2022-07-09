@@ -59,3 +59,11 @@ password
         }  
     ]
 }
+
+###### API for Creating a Category
+###### Payload
+title
+###### Result
+{
+    "title": "Bus"
+}
