@@ -1,8 +1,9 @@
-from django.conf import settings
 from django.core.mail import send_mail
-from backendapis.settings import (EMAIL_HOST_USER, EMAIL_HOST_PASSWORD, EMAIL_HOST, EMAIL_PORT)
-from rest_framework import serializers
 from django.contrib.auth.models import User
+
+from rest_framework import serializers
+
+from backendapis.settings import (EMAIL_HOST_USER, EMAIL_HOST_PASSWORD, EMAIL_HOST, EMAIL_PORT)
 
 
 class LoginSerializer(serializers.Serializer):

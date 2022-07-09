@@ -1,14 +1,15 @@
 from user.utils import JWTAuthentication
+
 from django.contrib.auth.models import User
 from django_filters.rest_framework import DjangoFilterBackend
 from django.core.mail import send_mail
+
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
-from rest_framework.mixins import RetrieveModelMixin
-from rest_framework.generics import RetrieveAPIView
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import IsAuthenticated
+
 from .models import Category, Car
 from .serializers import CategorySerializer, CarSerializer
 

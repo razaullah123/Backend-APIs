@@ -1,21 +1,21 @@
-
-import json
 from django.contrib.auth import authenticate
-from rest_framework import status
-from rest_framework.views import APIView
+
+
 from django.contrib.auth.models import User
 from django.http import JsonResponse
+
 from rest_framework.permissions import (AllowAny,
                                         IsAuthenticated,
                                         )
+from rest_framework.views import APIView
 
 
-from backendapis import settings
 from user.serializers import (
     LoginSerializer,
     RegistrationSerializer,
 
 )
+
 from user.utils import generate_access_token
 
 
@@ -31,20 +31,15 @@ class RegistrationView(APIView):
 
         Example:
             Request Body:
-                API URL: http://baseurl/users/registration/
+                API URL:  http://127.0.0.1:8000/auth/registration/
                 {
-                    "fullname": "Shakeel Afridi",
-                    "phone_number": "+92316151****",
-                    "email": "shakeel@domin.com",
-                    "password": "pass@word",
-                    "city": "Islamabad",
+                    "username": "razaullah",
+                    "email": "raza@yopmail.com",
                 }
 
             Response Body:
                 {
-                    "success": true,
-                    "payload": {},
-                    "message": "OTP sent successfully."
+                    "result": username,
                 }
 
         """
@@ -64,23 +59,26 @@ class SignInView(APIView):
     queryset = User.objects.all()
 
     def post(self, request, *args, **kwargs):
-        # User.objects.filter(phone_number="+923420202688").delete()
         """Login end user
 
         Example:
             Request Body:
-                API URL: http://users/sign-in/
+                API URL:  http://127.0.0.1:8000/auth/sign-in/
                 {
-                    "phone_number": "+92316151***",
+                    "username": "raza@yopmail.com",
                     "password": "pass@word"
                 }
             Response Body:
                 {
-                    "success": true,
-                    "payload": {
-                        "token": "jwt-token"
-                    },
-                    "message": "Logged in successfully."
+                    "result": "User login Successfully",
+                    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJhemFAeW9wbWFpbC5jb20iLCJ1c2VybmFtZSI6InJhemF1bGxhaCIsImlhdCI6MTY1NzMwNzgwNH0.dGOcISYWPIMskh0nhTigRtrJsawoaPwabFWo0m9Tgik",
+                    "users": [
+                        {
+                            "id": 1,
+                            "username": "razaullah",
+                            "email": "raza@yopmail.com"
+                        }
+                    ]
                 }
         """
 

@@ -5,6 +5,7 @@ from django.conf import settings
 from django.contrib.auth.models import User
 from django.middleware.csrf import CsrfViewMiddleware
 from django.views.decorators.csrf import csrf_exempt
+
 from rest_framework import exceptions
 from rest_framework.authentication import BaseAuthentication
 
