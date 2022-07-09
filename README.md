@@ -8,8 +8,10 @@
 ###### Move into the directory where we have the project files :
 cd Ropstam
 
-###### Create a virtual environment :
+###### Install virtualenv :
 pip install virtualenv
+
+###### Create a virtual environment
 python3 venv virtual_environment_name
 
 ###### Activate the virtual environment :
