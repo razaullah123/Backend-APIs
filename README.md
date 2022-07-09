@@ -41,3 +41,21 @@ email
     "username": "mujeeb"
 }  
 **After Successful registration an email will be sent to the user mentioned email with a randomly generated password**
+###### Sign In API
+( http://127.0.0.1:8000/auth/sign-in/)
+###### Payload
+username  
+email  
+password  
+###### Result
+{
+    "result": "User login Successfully",
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InJhemFAeW9wbWFpbC5jb20iLCJ1c2VybmFtZSI6InJhemF1bGxhaCIsImlhdCI6MTY1NzMwNzgwNH0.dGOcISYWPIMskh0nhTigRtrJsawoaPwabFWo0m9Tgik",
+    "users": [
+        {
+            "id": 1,
+            "username": "razaullah",
+            "email": "raza@yopmail.com"
+        }
+    ]
+}
