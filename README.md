@@ -73,6 +73,7 @@ password  **Sent to the user email**
 POST
 ###### Payload
 title
+token
 ###### Result
 {
     "title": "Bus"
@@ -84,6 +85,7 @@ title
 PATCH
 ###### Payload
 title
+token
 ###### Result
 {
     "title": "Cars"
@@ -115,6 +117,8 @@ GET
 (http://127.0.0.1:8000/vehicles/category/1/)  
 ###### Method  
 DELETE  
+###### Payload
+token
 **Note: Before deleting a category we should delete the cars in that category because the category field is a foreign key in the Car model and on_delete is Protected**
 ###### Result
 Category with the mentioned id will be deleted from the database
@@ -126,7 +130,8 @@ POST
 color  
 model  
 register_num  
-category  
+category 
+token
 ###### Result
 {  
     "color": "Blue",  
@@ -169,3 +174,25 @@ Token
         }  
     ]  
 }  
+###### API for Updating a Registered Car
+(http://127.0.0.1:8000/vehicles/car/1/)
+###### Method
+PUT
+###### Payload
+color
+model
+token
+###### Result
+{
+    "color": "purple",
+    "model": 2010,
+    "register_num": 1314,
+    "category": 2,
+    "register_cars": 3
+}
+###### API for Deleting a Car
+(http://127.0.0.1:8000/vehicles/car/1/)
+###### Method
+DELETE
+###### Payload
+token
