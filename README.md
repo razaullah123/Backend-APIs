@@ -12,7 +12,7 @@ cd Ropstam
 pip install virtualenv
 python3 venv virtual_environment_name
 
-######Activate the virtual environment :
+###### Activate the virtual environment :
 source virtual_environment_name/bin/activate
 
 ###### Install the requirements :
