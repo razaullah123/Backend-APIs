@@ -38,15 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-     #Custom Apps
-    'vehicles'
-    
     #Third Party Apps
     'django_filters',
     'rest_framework',
     'djoser',
-
+    #Custom Apps
+    'vehicles'
 ]
 
 MIDDLEWARE = [
